@@ -31,3 +31,8 @@ class Main {
 					break;
 				}
 
+				case 2: {
+					deck.printDeck();
+					break;
+				}
+
