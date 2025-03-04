@@ -31,3 +31,12 @@ class Deck {
 		}
 	}
 	
+	// (b) method to display created deck
+	public void printDeck() {
+		
+		System.out.println("-----DECK-----");
+		for(Card card : deck) {
+			System.out.println(card);
+		}
+	}
+
