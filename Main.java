@@ -52,3 +52,12 @@ class Main {
 					break;
 				}
 
+				case 5: {
+					System.out.print("Enter first card index (0-51): ");
+					int i1 = scan.nextInt();
+					System.out.print("Enter second card index (0-51): ");
+					int i2 = scan.nextInt();
+					deck.compareCards(i1, i2);
+					break;
+				}
+
