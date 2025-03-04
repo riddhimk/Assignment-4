@@ -71,3 +71,8 @@ class Main {
 					break;
 				}
 
+				case 7: {
+					deck.dealCard();
+					break;
+				}
+
