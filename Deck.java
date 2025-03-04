@@ -122,3 +122,10 @@ class Deck {
 		System.out.println("-----Cards removed-----");
 	}
 	
+	// (h) method to shuffle the deck
+	public void shuffleDeck() {
+		
+		System.out.println("-----Shuffling Deck-----");
+		Collections.shuffle(deck);
+	}
+}
