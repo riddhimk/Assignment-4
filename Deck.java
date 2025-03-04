@@ -70,3 +70,22 @@ class Deck {
 		}
 	}
 
+	// (e) method to compare 2 cards on rank
+	public void compareCards(int pos1, int pos2) {
+		
+		if(pos1 < deck.size() && pos2 < deck.size()) {
+			Card c1 = deck.get(pos1);
+			Card c2 = deck.get(pos2);
+
+			if(c1.rank.equals(c2.rank)) {
+				System.out.println(c1 + " and " + c2 + " have the same rank");
+			}
+			else {
+				System.out.println(c1 + " and " + c2 + " have different ranks");
+			}
+		}
+		else {
+			System.out.println("Invalid Position!");
+		}
+	}
+
