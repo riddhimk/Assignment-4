@@ -102,3 +102,23 @@ class Deck {
 		System.out.println("Card not found.");
 	}
 
+	// (g) method to deal 5 random cards
+	public void dealCard() {
+
+		// shuffle deck to randomize occurrence of cards
+		shuffleDeck();
+		
+		// select cards
+		System.out.println("-----SELECTED CARDS-----");
+		for(int i = 0; i < 5; i++) {
+			System.out.println((i+1) + ". " + deck.get(i));
+		}
+
+		// remove from the array list
+		for(int i = 0; i < 5; i++) {
+			deck.remove(0);
+		}
+
+		System.out.println("-----Cards removed-----");
+	}
+	
