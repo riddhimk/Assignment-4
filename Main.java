@@ -36,3 +36,10 @@ class Main {
 					break;
 				}
 
+				case 3: {
+					System.out.print("Enter card index (0-51): ");
+					int index = scan.nextInt();
+					deck.printCard(index);
+					break;
+				}
+
