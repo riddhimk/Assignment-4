@@ -76,3 +76,8 @@ class Main {
 					break;
 				}
 
+				case 8: {
+					deck.shuffleDeck();
+					break;
+				}
+
