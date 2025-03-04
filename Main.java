@@ -23,3 +23,11 @@ class Main {
 			System.out.print("Enter your choice: ");
 			choice = scan.nextInt();
 
+			switch (choice) {
+
+				case 1: {
+					deck.createDeck();
+					System.out.println("Deck created successfully.");
+					break;
+				}
+
