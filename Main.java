@@ -61,3 +61,13 @@ class Main {
 					break;
 				}
 
+				case 6: {
+					scan.nextLine();
+					System.out.print("Enter rank of the card: ");
+					String rank = scan.nextLine();
+					System.out.print("Enter suit of the card: ");
+					String suit = scan.nextLine();
+					deck.findCard(rank, suit);
+					break;
+				}
+
