@@ -89,3 +89,16 @@ class Deck {
 		}
 	}
 
+	// (f) method to find a particular card
+	public void findCard(String rank, String suit) {
+
+		for (int i = 0; i < deck.size(); i++) {
+			Card card = deck.get(i);
+			if (card.rank.equalsIgnoreCase(rank) && card.suit.equalsIgnoreCase(suit)) {
+				System.out.println("Card Found: " + card + " at position " + i);
+				return;
+			}
+		}
+		System.out.println("Card not found.");
+	}
+
