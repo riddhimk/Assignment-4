@@ -51,3 +51,22 @@ class Deck {
 		}
 	}
 
+	// (d) method to check if 2 cards are from same suits
+	public void sameCard(int pos1, int pos2) {
+
+		if(pos1 < deck.size() && pos2 < deck.size()) {
+			Card c1 = deck.get(pos1);
+			Card c2 = deck.get(pos2);
+
+			if(c1.suit.equals(c2.suit)) {
+				System.out.println(c1 + " and " + c2 + " belong to same suit");
+			}
+			else {
+				System.out.println(c1 + " and " + c2 + " belong to different suit");
+			}
+		}
+		else {
+			System.out.println("Invalid Position!");
+		}
+	}
+
