@@ -40,3 +40,14 @@ class Deck {
 		}
 	}
 
+	// (c) method to print card (by position)
+	public void printCard(int pos) {
+
+		if(pos >= 0 && pos < deck.size()) {
+			System.out.println("Card at position " + pos + ": " + deck.get(pos));
+		}
+		else {
+			System.out.println("Invalid Position!");
+		}
+	}
+
