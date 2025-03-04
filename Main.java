@@ -43,3 +43,12 @@ class Main {
 					break;
 				}
 
+				case 4: {
+					System.out.print("Enter first card index (0-51): ");
+					int index1 = scan.nextInt();
+					System.out.print("Enter second card index (0-51): ");
+					int index2 = scan.nextInt();
+					deck.sameCard(index1, index2);
+					break;
+				}
+
