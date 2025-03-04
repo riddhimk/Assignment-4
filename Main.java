@@ -81,3 +81,15 @@ class Main {
 					break;
 				}
 
+				case 9: {
+					System.out.println("Exiting...");
+					break;
+				}
+
+				default: {
+					System.out.println("Invalid choice! Please try again.");
+				}
+			}
+        } while (choice != 8);
+    }
+}
